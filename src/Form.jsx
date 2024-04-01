@@ -74,11 +74,11 @@ const Form = () => {
     
 
   return (
-    <div style={containerStyle} className='modal'>
+    <div style={containerStyle} className=''>
         <h1>User Details Modal</h1>
         <button onClick={handleForm}>Open Form</button>
         <div style={overlayStyle} onClick={handleClose}></div>
-            
+            <div className='modal' >
             {isVisible && (
                 <div className='modal-content'>
                     <form style={formStyle} onSubmit={handleFormData}>
@@ -102,6 +102,7 @@ const Form = () => {
                         <button type='submit' className='submit-button'>Submit</button>
                     </form> 
                     </div>)}
+            </div>
     </div>
   )
 }
