@@ -57,9 +57,6 @@ const Form = () => {
         boxShadow: '0 0 10px rgba(0, 0, 0, 0.5)',
     };
     
-    const containerStyle = {
-        position: 'relatives',
-    };
     
     const overlayStyle = {
         position: 'fixed',
@@ -75,7 +72,7 @@ const Form = () => {
     
 
   return (
-    <div style={containerStyle} >
+    <div className='modal'>
         <h1>User Details Modal</h1>
         <button onClick={handleForm}>Open Form</button>
         <div style={overlayStyle} onClick={handleClose}></div>
