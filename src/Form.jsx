@@ -78,7 +78,7 @@ const Form = () => {
         <h1>User Details Modal</h1>
         <button onClick={handleForm}>Open Form</button>
         <div style={overlayStyle} onClick={() => handleClose()}></div>
-            {/* {!isVisible && initial && <div className='modal'>} */}
+            {!isVisible && initial && <div className='modal'></div>}
             {isVisible && (
                 <div className='modal'>
                 <div className='modal-content'>
@@ -104,7 +104,6 @@ const Form = () => {
                     </form> 
                     </div>
                     </div>)}
-                {/* </div> */}
         </div>
   )
 }
