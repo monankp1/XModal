@@ -78,8 +78,9 @@ const Form = () => {
         <h1>User Details Modal</h1>
         <button onClick={handleForm}>Open Form</button>
         <div style={overlayStyle} onClick={handleClose}></div>
-            <div className='modal-content'>
+            
             {isVisible && (
+                <div className='modal-content'>
                     <form style={formStyle} onSubmit={handleFormData}>
                         <h1>Fill Details</h1>
                         <label>UserName:</label>
@@ -99,8 +100,8 @@ const Form = () => {
                         <input type='date' value={dob} onChange={handleDobChange} id='dob' required/>
                         <br />
                         <button type='submit' className='submit-button'>Submit</button>
-                    </form> )}
-            </div>
+                    </form> 
+                    </div>)}
     </div>
   )
 }
