@@ -78,7 +78,7 @@ const Form = () => {
         <h1>User Details Modal</h1>
         <button onClick={handleForm}>Open Form</button>
         <div style={overlayStyle} onClick={handleClose}></div>
-            <div className='modal-content modal'>
+            <div className='modal-content'>
             {isVisible && (
                     <form style={formStyle} onSubmit={handleFormData}>
                         <h1>Fill Details</h1>
