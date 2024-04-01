@@ -29,6 +29,7 @@ const Form = () => {
             setDob('');
             setEmail('');
             setUserName('');
+            setIsVisible(false);
         }
 
 
