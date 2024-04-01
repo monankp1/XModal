@@ -74,7 +74,7 @@ const Form = () => {
     
 
   return (
-    <div > 
+    <div> 
         <h1>User Details Modal</h1>
         <button onClick={handleForm}>Open Form</button>
         <div style={overlayStyle} onClick={() => handleClose()}></div>
@@ -104,7 +104,7 @@ const Form = () => {
                     </form> 
                     </div>
                     </div>)}
-                </div>
+                {/* </div> */}
         </div>
   )
 }
